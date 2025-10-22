@@ -3,38 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odpocitavanie</title>
-    <!-- link:css -->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Colour flipper</title>
+    <!-- defer atribut zabezpecuje, ze js sa spusti po nacitani celej stranky -->
+    <!-- <script src="script.js" defer></script> -->
 </head>
 <body>
-    <div class="hero">
-        <h1> Days until Halloween </h1>
-        <div class="timebox">
-            <div class="time">
-                <h2 id="days">00</h2>
-                <p>Days</p>
-            </div>
-
-            <div class="time">
-                <h2 id="hours">00</h2>
-                <p>Hours</p>
-            </div>
-
-            <div class="time">
-                <h2 id="minutes">00</h2>
-                <p>Minutes</p>
-            </div>
-
-            <div class="time">
-                <h2 id="seconds">00</h2>
-                <p>Seconds</p>
-            </div>
-        </div>
-
-
-    </div>
-
+    <!-- len jeden element section -->
+    <section id="colour-display">
+        <!-- obsahuje len text a tlacidlo -->
+         <h1> 
+            Background: <span id="current-colour">#ffffff</span>
+        </h1>
+        <!-- tlacidlom menim farbu -->
+        <button id="new-colour-button"> New Colour!</button>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
